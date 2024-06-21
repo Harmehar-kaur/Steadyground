@@ -18,7 +18,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // Uncomment and set the static files directory if needed
 // const env = require('./config/environment'); // Ensure the env file is properly required
-// app.use(express.static(env.asset_path));
+app.use(express.static('./assets'));
 // app.use('/uploads', express.static(__dirname + '/uploads'));
 
 // Uncomment and use morgan for logging if needed
